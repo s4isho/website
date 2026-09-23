@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+
+<body>
+    <center>
+        <table border="1" width="70%">
+            <thead>
+                <tr>
+                    <th>Form Elements</th>
+                    <th>Sample Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2">Text Inputs</th>
+                </tr>
+                <tr>
+                    <th><label for="basic-text">Text Input:</label></th>
+                    <th><input type="text" id="basic-text" name="basic_text" placeholder="Enter plain text" maxlength="50"></th>
+                </tr>
+
+                <tr>
+                    <th><label for="user-password">Password Input:</label></th>
+                    <th><input type="password" id="user-password" name="user_password" placeholder="Enter password" required></th>
+                </tr>
+
+                <tr>
+                    <th><label for="user-email">Email Input:</label></th>
+                    <th><input type="email" id="user-email" name="user_email" placeholder="user@example.com" multiple></th>
+                </tr>
+
+                <tr>
+                    <th><label for="user-url">URL Input:</label></th>
+                    <th><input type="url" id="user-url" name="user_url" placeholder="https://example.com"></th>
+                </tr>
+
+                <tr>
+                    <th><label for="user-tel">Telephone Input:</label></th>
+                    <th><input type="tel" id="user-tel" name="user_tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></th>
+                </tr>
+
+                <tr>
+                    <th><label for="site-search">Search Input:</label></th>
+                    <th><input type="search" id="site-search" name="site_search" placeholder="Search site..."></th>
+                </tr>
+
+                <tr>
+                    <th><label for="user-bio">Textarea (Multi-line Text):</label></th><br>
+                    <th><textarea id="user-bio" name="user_bio" rows="4" cols="50" placeholder="Type your biography here..."></textarea></th>
+                </tr>
+
+                
+                <tr>
+                    <th colspan="2">Numerical &amp; Range</th>
+                </tr>
+                <tr>
+                    <th><label for="user-age">Number Input:</label></th>
+                    <th><input type="number" id="user-age" name="user_age" min="1" max="120" step="1" value="25"></th>
+                </tr>
+                <tr>
+                    <th><label for="volume-level">Range Input (Slider):</label></th>
+                    <th><input type="range" id="volume-level" name="volume_level" min="0" max="100" step="5" value="50"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">Date &amp; Time Controls</th>
+                </tr>
+                <tr>
+                    <th><label for="event-date">Date Input:</label></th>
+                    <th><input type="date" id="event-date" name="event_date" min="2020-01-01" max="2030-12-31"></th>
+                </tr>
+                <tr>
+                    <th><label for="event-time">Time Input:</label></th>
+                    <th><input type="time" id="event-time" name="event_time"></th>
+                </tr>
+                <tr>
+                    <th><label for="event-datetime">Date &amp; Time Local Input:</label></th>
+                    <th><input type="datetime-local" id="event-datetime" name="event_datetime"></th>
+                </tr>
+                <tr>
+                    <th><label for="card-expiry-month">Month Input:</label></th>
+                    <th><input type="month" id="card-expiry-month" name="card_expiry_month"></th>
+                </tr>
+                <tr>
+                    <th><label for="project-week">Week Input:</label></th>
+                    <th><input type="week" id="project-week" name="project_week"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">Selection Controls</th>
+                </tr>
+                <tr>
+                    <th><label for="terms-agree">I agree to the terms and conditions (Single Checkbox)</label></th>
+                    <th><input type="checkbox" id="terms-agree" name="terms_agree" value="accepted"></th>
+                </tr>
+                <tr>
+                    <th>Hobbies (Multiple Checkboxes):</th>
+                    <th>
+                        <input type="checkbox" id="hobby-reading" name="hobbies" value="reading">
+                        <label for="hobby-reading">Reading</label>
+                        <input type="checkbox" id="hobby-sports" name="hobbies" value="sports">
+                        <label for="hobby-sports">Sports</label>
+                        <input type="checkbox" id="hobby-coding" name="hobbies" value="coding" checked>
+                        <label for="hobby-coding">Coding</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Contact Preference (Radio Buttons):</th>
+                    <th>
+                        <input type="radio" id="pref-email" name="contact_pref" value="email" checked>
+                        <label for="pref-email">Email</label>
+                        <input type="radio" id="pref-phone" name="contact_pref" value="phone">
+                        <label for="pref-phone">Phone</label>
+                        <input type="radio" id="pref-mail" name="contact_pref" value="mail">
+                        <label for="pref-mail">Mail</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="country-select">Select Dropdown:</label></th>
+                    <th>
+                        <select id="country-select" name="country_select">
+                            <option value="" disabled selected>-- Select a Country --</option>
+                            <optgroup label="North America">
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="uk">United Kingdom</option>
+                                <option value="fr">France</option>
+                            </optgroup>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="skills-select">Multiple Select Box:</label></th>
+                    <th>
+                        <select id="skills-select" name="skills_select" multiple size="4">
+                            <option value="html">HTML5</option>
+                            <option value="css">CSS3</option>
+                            <option value="js">JavaScript</option>
+                            <option value="sql">SQL</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="browser-choice">Datalist Input (Autocompletion):</label></th>
+                    <th>
+                        <input list="browsers" id="browser-choice" name="browser_choice" placeholder="Type or choose a browser">
+                        <datalist id="browsers">
+                            <option value="Google Chrome">
+                            <option value="Mozilla Firefox">
+                            <option value="Apple Safari">
+                            <option value="Microsoft Edge">
+                            <option value="Brave">
+                        </datalist>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">File &amp; Media Inputs</th>
+                </tr>
+                <tr>
+                    <th><label for="user-avatar">File Input (Single/Multiple):</label></th>
+                    <th><input type="file" id="user-avatar" name="user_avatar" accept="image/*,.pdf" multiple></th>
+                </tr>
+                <tr>
+                    <th><label for="fav-color">Color Picker Input:</label></th>
+                    <th><input type="color" id="fav-color" name="fav_color" value="#ff0000"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">Special, Display &amp; Hidden Elements</th>
+                </tr>
+                <tr>
+                    <th>Hidden Input:</th>
+                    <th><input type="hidden" id="user-id" name="user_id" value="102938"></th>
+                </tr>
+                <tr>
+                    <th>Output Element:</th>
+                    <th>
+                        <label for="num-a">A:</label>
+                        <input type="number" id="num-a" value="10"> +
+                        <label for="num-b">B:</label>
+                        <input type="number" id="num-b" value="20"> =
+                        <output name="result" for="num-a num-b">30</output>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="disk-usage">Meter Element (Disk Usage):</label></th>
+                    <th><meter id="disk-usage" min="0" max="100" low="33" high="66" optimum="80" value="75">75%</meter></th>
+                </tr>
+                <tr>
+                    <th><label for="file-progress">Progress Element:</label></th>
+                    <th><progress id="file-progress" max="100" value="60">60%</progress></th>
+                </tr>
+                <tr>
+                    <th colspan="2">Buttons &amp; Actions</th>
+                </tr>
+                <tr>
+                    <th>Submit Input:</th>
+                    <th><input type="submit" value="Submit Input Button"></th>
+                </tr>
+                <tr>
+                    <th>Reset Input:</th>
+                    <th><input type="reset" value="Reset Input Button"></th>
+                </tr>
+                <tr>
+                    <th>Generic Input Button:</th>
+                    <th><input type="button" value="Plain Input Button" onclick="alert('Button clicked!')"></th>
+                </tr>
+                <tr>
+                    <th><label for="img-submit">Image Submit Button:</label></th>
+                    <th>
+                        <input type="image" id="img-submit" src="https://placehold.co/100x35/000000/FFFFFF?text=Submit" alt="Submit Image Button">
+                    </th>
+                </tr>
+                <tr>
+                    <th>HTML5 &lt;button&gt; Tags:</th>
+                    <th>
+                        <button type="submit"><strong>Submit</strong> Button Tag</button>
+                        <button type="reset"><em>Reset</em> Button Tag</button>
+                        <button type="button">Custom <span>Button Tag</span></button>
+                    </th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Created by Vaughn Lestat G. Cruz</th>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+</body>
+
+</html>
