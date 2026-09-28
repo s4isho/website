@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova Solutions - Employee Portal Login</title>
+    
+  <style>
+    /* Barney ahh style (Royal Purple) */
+    /* body: light tint page background and base typography */
+    body {
+      background-color: #F3EDFB;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 60px 0 60px 0; 
+    }
+
+    /* table: centered login card with a medium tone outer border */
+    table {
+      width: 420px;
+      background-color: #FFFFFF;
+      border: 2px solid #8A63C9;
+      border-collapse: collapse;
+      box-shadow: 0 6px 18px rgba(60, 30, 110, 0.18);
+    }
+
+    /* thead: dark shade header band that holds the portal heading */
+    thead {
+      background-color: #3C1E6E;
+      border-bottom: 2px solid #8A63C9;
+    }
+
+    /* h2: white heading text, padded and centered inside the dark header */
+    h2 {
+      margin: 0;
+      padding: 18px 14px; 
+      color: #FFFFFF;
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    /* tbody td: dark shade label text and spacing for the input rows */
+    tbody td {
+      padding: 10px; 
+      color: #3C1E6E;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid #8A63C9;
+    }
+
+    /* input: light tint field backdrop with a medium tone outline */
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 16px; 
+      color: #3C1E6E;
+      font-size: 14px;
+      background-color: #EDE4FA;
+      border: 1px solid #8A63C9;
+      border-radius: 4px;
+    }
+
+    /* tfoot td: centered footer cells for the buttons and the attribution */
+    tfoot td {
+      padding: 14px; 
+      color: #3C1E6E;
+      font-size: 13px;
+      text-align: center;
+      border: 1px solid #8A63C9;
+    }
+
+    /* input[type="submit"]: dark shade primary action button */
+    input[type="submit"] {
+      width: auto;
+      margin: 0 6px;
+      padding: 8px 16px; 
+      color: #FFFFFF;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      background-color: #3C1E6E;
+      border: 1px solid #3C1E6E;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* input[type="reset"]: medium tone secondary action button */
+    input[type="reset"] {
+      width: auto;
+      margin: 0 6px;
+      padding: 8px 16px; 
+      color: #FFFFFF;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      background-color: #8A63C9;
+      border: 1px solid #8A63C9;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- login form block -->
+  <form action="#" method="post">
+
+    <!-- table used as the centered layout container for the login form -->
+    <table align="center">
+
+      <!-- table head: portal heading spanning both columns -->
+      <thead>
+        <tr>
+          <td colspan="2">
+            <h2>Portal Login</h2>
+          </td>
+        </tr>
+      </thead>
+
+      <!-- table body: one row for the username and one row for the password -->
+      <tbody>
+        <tr>
+          <td><label for="username">Username:</label></td>
+          <td>
+            <input type="text" id="username" name="username"
+                   placeholder="Enter Username">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter Password">
+          </td>
+        </tr>
+      </tbody>
+
+      <!-- table foot: form controls and student attribution metadata -->
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Created by: Vaughn Lestat G. Cruz - Grade 12 Cooper
+          </td>
+        </tr>
+      </tfoot>
+
+    </table>
+  </form>
+
+</body>
+</html>
