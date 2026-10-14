@@ -1,0 +1,5 @@
+1. The main difference between semantic and non-semantic tags is that semantic tags like <header> and <main> clearly portray the meaning to both the browser and the developer, as opposed to non-semantic tags like <div> or <span>.
+2. The <main> semantic tag wraps the <article> elements, and the <aside> tag primarily acts as the unordered list of competencies the developer harbors.
+3. The difference between padding and margin is that padding applies space inside an element, while margin applies space outside an element.
+4. The .container class utilizes CSS Flexbox by first initializing the class to use Flexbox with (display: flexbox), and uses (gap: 20px) to place a gap in between the <article> elements (<main> tag) and the <aside> tag.
+5. The type of CSS selector (nav a:hover) uses are three different types. First is the Element selector for (nav) and (a), the Descendant Combinator for the space in between (nav a), and Pseudo-class for (:hover), which triggers only when the user hovers over the navigation links. With this code, whenever the user hovers over the links, a dark blue border appears around the text, with (border-radius: 4px) rounding it out.
