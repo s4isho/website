@@ -1,0 +1,78 @@
+/* Ito ang nag-didikta ng background color para sa navigation bar */
+.navbar {
+    background-color: #5d1b49;
+    /* Primary Navy */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ito ang nagdidikta ng alignment at spacing ng navigation bar */
+.nav-list {
+    display: flex;
+    /* Aligns items side-by-side horizontally */
+    flex-direction: row;
+    /* Sets main axis left-to-right */
+    justify-content: center;
+    /* Packs items toward start of menu */
+    align-items: center;
+    /* Centers items vertically */
+    list-style-type: none;
+    /* Removes default list bullet points */
+    margin: 0;
+    /* Clears browser default margins */
+    padding: 0;
+    /* Clears browser default padding */
+}
+
+/* Ito ang nagdidikta ng mismong text ng mga links, kasama ang spacing, color, at font. */
+.nav-link {
+    display: block;
+    /* Expands clickable box to fill padding */
+    padding: 14px 20px;
+    /* Breathing room inside target box */
+    color: #FFFFFF;
+    /* High-contrast text color */
+    text-decoration: none;
+    /* Removes standard underline */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Ito ang default link state na color */
+.nav-link:link {
+    color: #FFFFFF;
+}
+
+/* Ito ang unvisited link state */
+.nav-link:visited {
+    color: #E0E0E0;
+}
+
+/* Ito ang mouse hover state */
+.nav-link:hover {
+    background-color: #9c006d;
+    color: #FFFFFF;
+}
+
+/* Ito ang keyboard focus na state */
+.nav-link:focus {
+    outline: 3px solid #ff0783;
+    outline-offset: -3px;
+    background-color: #7c0080;
+}
+
+/* Ito ang active-click press state */
+.nav-link:active {
+    background-color: #550051;
+    transform: translateY(1px);
+}
+
+/* Ito ang page-highlight class */
+.nav-link.active {
+    background-color: #9c0094;
+    border-bottom: 4px solid #ff0766;
+}
