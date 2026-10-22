@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Array</title>
+    <script src="student-script.js" defer></script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #3b1d57;
+            color: #ffffff;
+        }
+
+        th,
+        td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:nth-child(even) {
+
+            background-color: #fdedfb;
+        }
+
+        tbody tr:hover {
+
+            background-color: #fadcfc;
+        }
+
+        tbody td img {
+            border-radius: 10%;
+            border: 2px solid #e039e6;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html"> Home </a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>LRN</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>SECTION</th>
+                <th>IMAGES</th>
+            </tr>
+        </thead>
+        <tbody id="output">
+            <!-- Dynamic rows will be inserted here -->
+        </tbody>
+    </table>
+
+    
+</body>
+
+</html>

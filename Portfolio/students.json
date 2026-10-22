@@ -1,0 +1,72 @@
+[
+  {
+    "lrn": 100111,
+    "name": "Jethro A. Rosales",
+    "age": 18,
+    "section": "12-Cooper",
+    "image": "images/jethro.jpg"
+  },
+  {
+    "lrn": 100112,
+    "name": "Prince Luscian Paglinawan",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/prince.jpg"
+  },
+  {
+    "lrn": 100113,
+    "name": "Dale Danielle Peralta",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/dale.jpg"
+  },
+  {
+    "lrn": 100114,
+    "name": "Railey Vale Salugao",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/railey.jpg"
+  },
+  {
+    "lrn": 100115,
+    "name": "Julius Ceazar Bergado",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/julius.jpg"
+  },
+  {
+    "lrn": 100116,
+    "name": "Nyt Zefhiro Concepcion",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/nyt.jpg"
+  },
+  {
+    "lrn": 100117,
+    "name": "Ziantino Dela Cruz",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/ziantino.jpg"
+  },
+  {
+    "lrn": 100118,
+    "name": "Kiane Carlo Bauto",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/bauto.jpg"
+  },
+  {
+    "lrn": 100119,
+    "name": "Lance Kherwin Maliksi",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/lance.jpg"
+  },
+  {
+    "lrn": 100120,
+    "name": "John Erson Jamero",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "images/erson.jpg"
+  }
+]
