@@ -1,6 +1,6 @@
 /* Ito ang nag-didikta ng background color para sa navigation bar */
 .navbar {
-    background-color: #5d1b49;
+    background-image: linear-gradient(#fe00fe, #810077);
     /* Primary Navy */
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -37,8 +37,8 @@
     font-family: 'Segoe UI', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-    justify-content: center; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: center;
     align-items: center;
 }
 
@@ -60,7 +60,7 @@
 
 /* Ito ang keyboard focus na state */
 .nav-link:focus {
-    outline: 3px solid #ff0783;
+    outline: 3px solid #ff07de;
     outline-offset: -3px;
     background-color: #7c0080;
 }
@@ -74,5 +74,5 @@
 /* Ito ang page-highlight class */
 .nav-link.active {
     background-color: #9c0094;
-    border-bottom: 4px solid #ff0766;
+    border-bottom: 4px solid #ff07de;
 }
