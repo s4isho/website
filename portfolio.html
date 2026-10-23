@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #portfolio-link {
+            width: 180%;
+            display: block;
+            margin: 10px 19px;
+            color: #c414a7;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid #c516bc;
+            text-align: center;
+        }
+
+        .box {
+            color: rgb(194, 33, 181);
+            font-size: 1.5rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 1em;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100px;
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <br>
-    <center>
-        <a href="Portfolio/form-elements.html">Form Elements</a><br>
-        <a href="Portfolio/login.html">Login</a><br>
-        <a href="Portfolio/console-example.html">Console Example</a><br>
-        <a href="Portfolio/sample-calculator.html">Sample Calculator</a><br>
-        <a href="Portfolio/discount-calculator.html">Discount Calculator</a><br>
-        <a href="Portfolio/net-developer-profile.html">.NET Developer Profile</a><br>
-        <a href="Portfolio/schedule.html">Grade 12 Cooper Schedule</a><br>
-        <a href="Portfolio/schedule-styled.html">Grade 12 Cooper Schedule Styled</a><br>
-        <a href="Portfolio/student-array.html">Student Array</a><br>
-        <a href="Portfolio/grid.html">Grid Layout</a><br>
-        <a href="Portfolio/login-logic-demo.html">Login Logic Demo</a><br>
-    </center>
+
+    <main class="container">
+        <a href="Portfolio/form-elements.html" id="portfolio-link" class="box"><h3>Form Elements</h3></a><br>
+        <a href="Portfolio/login.html" id="portfolio-link" class="box"><h3>Login</h3></a><br>
+        <a href="Portfolio/console-example.html" id="portfolio-link" class="box"><h3>Console Example</h3></a><br>
+        <a href="Portfolio/sample-calculator.html" id="portfolio-link" class="box"><h3>Sample Calculator</h3></a><br>
+        <a href="Portfolio/discount-calculator.html" id="portfolio-link" class="box"><h3>Discount Calculator</h3></a><br>
+        <a href="Portfolio/net-developer-profile.html" id="portfolio-link" class="box"><h3>.NET Developer Profile</h3></a><br>
+        <a href="Portfolio/schedule.html" id="portfolio-link" class="box"><h3>Grade 12 Cooper Schedule</h3></a><br>
+        <a href="Portfolio/schedule-styled.html" id="portfolio-link" class="box"><h3>Grade 12 Cooper Schedule Styled</h3></a><br>
+        <a href="Portfolio/student-array.html" id="portfolio-link" class="box"><h3>Student Array</h3></a><br>
+        <a href="Portfolio/grid.html" id="portfolio-link" class="box"><h3>Grid Layout</h3></a><br>
+        <a href="Portfolio/login-logic-demo.html" id="portfolio-link" class="box"><h3>Login Logic Demo</h3></a><br>
+    </main>
 </body>
+
 </html>
