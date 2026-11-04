@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,40 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
-                $("#b1").click(function () {
-                    $("#box").animate({
-                        width: "300px"
-                    });
-                    $("#box").animate({
-                        height: "300px"
-                    });
+            $("#b1").click(function () {
+                $("#box").animate({
+                    width: "300px"
                 });
-
-                $("#b2").click(function () {
-                    $("#d1").delay("slow").fadeIn();
-                    $("#d2").delay("fast").fadeIn();
-                    $("#d3").delay(1000).fadeIn();
-                    $("#d4").delay(2000).fadeIn();
-                });
-
-                $(document).ready(function () {
-                    $(".btn1").click(function () {
-                        $("#p1").slideUp();
-                    });
-                });
-
-                $(document).ready(function () {
-                    $(".b1").click(function () {
-                        $("#p3").hide();
-                    });
+                $("#box").animate({
+                    height: "300px"
                 });
             });
+
+            $("#b2").click(function () {
+                $("#d1").delay("slow").fadeIn();
+                $("#d2").delay("fast").fadeIn();
+                $("#d3").delay(1000).fadeIn();
+                $("#d4").delay(2000).fadeIn();
+            });
+
+            $(document).ready(function () {
+                $(".btn1").click(function () {
+                    $("#p1").slideUp();
+                });
+                $(".btn2").click(function () {
+                    $("#p1").slideDown();
+                });
+            });
+
+            $(document).ready(function () {
+                $(".b1").click(function () {
+                    $("#p3").hide();
+                });
+                $(".b2").click(function () {
+                    $("#p3").show();
+                });
+            });
+        });
 
     </script>
     <style>
@@ -54,6 +61,7 @@
             padding: 20px;
             border: 2px solid green;
         }
+
         #border2 {
             width: 40%;
             height: 100px;
@@ -75,14 +83,19 @@
         }
     </style>
 </head>
-<body style="text-align: center;">
-    <a href="../portfolio.html"><h2>Home</h2></a>
-    <br>
-    <div id="box"></div>
-    <button id="b1">Click Here !</button>
 
-    <!-- Click on this button -->
-    <button id="b2">Click Me!</button>
+<body style="text-align: center;">
+    <a href="../portfolio.html">
+        <h2>Home</h2>
+    </a>
+    <br>
+
+    <!-- Animate -->
+    <div id="box"></div>
+    <button id="b1">Enlarge Box (Animate)</button>
+
+    <!-- Fade In -->
+    <button id="b2">Show Boxes (Fade In)</button>
     <br><br>
     <div id="d1" style="width:50px;height:50px;display:
                 none;background-color:lightgreen;"></div>
@@ -97,19 +110,21 @@
                 none;background-color:yellow;"></div>
     <br>
 
+    <!-- Slide Up and Slide Down -->
     <div id="border">
         <p id="p1">This paragraph will get hide.</p>
-        <!-- click on this button -->
         <button class="btn1">Slide up</button>
+        <button class="btn2">Slide down</button>
     </div>
 
     <br>
 
+    <!-- Fade To -->
     <div id="border2">
         <p id="p2">
             This paragraph will fade out !
         </p>
-    
+
         <p>
             This paragraph will not fade !
         </p>
@@ -123,11 +138,12 @@
 
     <br>
 
+    <!-- Hide and Show -->
     <div id="hide">
         <p id="p3">GeeksforGeeks !.</p>
     </div>
-    <!-- click on this button and 
-        above paragraph will disappear -->
-    <button class="b1">Click me !</button>
+    <button class="b1">Hide</button>
+    <button class="b2">Show</button>
 </body>
+
 </html>
