@@ -1,16 +1,16 @@
 function compareLogin(event){
     event.preventDefault();
 
-    const USERNAME = "juju";
-    const PASSWORD = "1234";
+    const USERNAME = "epstein";
+    const PASSWORD = "diddyblud";
     const userName = document.getElementById("username").value;
     const passWord = document.getElementById("password").value;
     const errorMessage = document.getElementById("errorMessage").value;
     if(userName === USERNAME && passWord === PASSWORD){
-        alert("Nice");
+        alert("Welcome back, Mein Fuhrer!");
         window.location.href = "message.html";
     }else{
-        alert("Gng");
+        alert("You impostor.");
         errorMessage.textContent = "Invalid Username or Password!";
 
     }
