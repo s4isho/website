@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+    <style>
+        #tabs {
+            background-image: linear-gradient(#ee9aff, #fac4f5);
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <center>
-        <h1>About</h1>
-    </center>
+    <main>
+        <center>
+            <h2>About Me</h2>
+            <br>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Skills</a></li>
+                    <li><a href="#tabs-2">Hobbies</a></li>
+                    <li><a href="#tabs-3">History</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>I am an intermediate programmer with knowledge in Java, JavaScript, HTML, CSS, and Python.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>I like playing video games, reading webnovels and manga, and watching anime and k-drama.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>I am a top-notcher in Programming as a student in Governor Juanito Reyes Remulla Senior High School.</p>
+                </div>
+            </div>
+        </center>
+    </main>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-text">
@@ -45,4 +80,5 @@
     </footer>
 </body>
 </body>
+
 </html>
