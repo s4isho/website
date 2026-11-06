@@ -3,10 +3,10 @@ function compareLogin(event) {
 
     const USERNAME = "epstein";
     const PASSWORD = "diddyblud";
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const userName = document.getElementById("username").value;
+    const passWord = document.getElementById("password").value;
     const errorMessage = document.getElementById("errorMessage").value;
-    if (username === USERNAME && password === PASSWORD) {
+    if (userName === USERNAME && passWord === PASSWORD) {
         alert("Welcome back, Mein Fuhrer!");
         window.location.href = "message.html";
     } else {
