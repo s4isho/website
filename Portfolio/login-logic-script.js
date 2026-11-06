@@ -1,18 +1,17 @@
-function compareLogin(event){
+function compareLogin(event) {
     event.preventDefault();
 
     const USERNAME = "epstein";
     const PASSWORD = "diddyblud";
-    const userName = document.getElementById("username").value;
-    const passWord = document.getElementById("password").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("errorMessage").value;
-    if(userName === USERNAME && passWord === PASSWORD){
+    if (username === USERNAME && password === PASSWORD) {
         alert("Welcome back, Mein Fuhrer!");
         window.location.href = "message.html";
-    }else{
+    } else {
         alert("You impostor.");
         errorMessage.textContent = "Invalid Username or Password!";
-
     }
 }
 
