@@ -11,6 +11,11 @@
     <main>
         <h1>Save Grades</h1>
 
+        <center>
+            <br>
+            <h2><a href="../portfolio.html"> Home</a></h2>
+        </center>
+
         <label for="lrn">LRN:</label>
         <input type="text" id="txtLrn" maxlength="11">
 
@@ -25,6 +30,8 @@
 
         <button type="button" id="save" onclick="saveGrade()">Save</button>
 
+        <p id="message"></p>
+
         <table border="1">
             <thead>
                 <tr>
@@ -32,25 +39,26 @@
                     <th>Name</th>
                     <th>Subject</th>
                     <th>Grade</th>
+                    <th>Action</th>
                 </tr>
             </thead>
 
             <tbody id="tableBody"></tbody>
         </table>
 
-        <center>
-            <br>
-            <h2><a href="../portfolio.html"> Home</a></h2>
-        </center>
+        
 
         <script>
-            const txtLrn = document.getElementById("txtLrn");
-            const txtName = document.getElementById("txtName");
-            const txtSubject = document.getElementById("txtSubject");
-            const txtGrade = document.getElementById("txtGrade");
-            const tableBody = document.getElementById("tableBody")
+            var txtLrn = document.getElementById("txtLrn");
+            var txtName = document.getElementById("txtName");
+            var txtSubject = document.getElementById("txtSubject");
+            var txtGrade = document.getElementById("txtGrade");
+            var btnSave = document.getElementById("save");
+            var message = document.getElementById("message");
+            var tableBody = document.getElementById("tableBody");
 
             var grades = JSON.parse(localStorage.getItem("grades")) || [];
+            var selectedIndex = -1;
 
             function showGrades() {
                 tableBody.textContent = "";
@@ -60,7 +68,33 @@
                     row.insertCell(1).textContent = grades[i].name;
                     row.insertCell(2).textContent = grades[i].subject;
                     row.insertCell(3).textContent = grades[i].grade;
+
+                    var actionCell = row.insertCell();
+                    actionCell.appendChild(makeUpdateButton(i));
                 }
+            }
+
+            function makeUpdateButton(index) {
+                var button = document.createElement("button");
+
+                button.textContent = "Update";
+                button.addEventListener("click", function () {
+                    loadForUpdate(index);
+                });
+
+                return button;
+            }
+
+            function loadForUpdate(index) {
+                selectedIndex = index;
+
+                txtLrn.value = grades[index].lrn;
+                txtName.value = grades[index].name;
+                txtSubject.value = grades[index].subject;
+                txtGrade.value = grades[index].grade;
+
+                btnSave.value = "Update";
+                message.textContent = "Change the values, then click the Update button above the table.";
             }
 
             function saveGrade() {
@@ -74,22 +108,30 @@
                     return;
                 }
 
-                var record = { 
-                    lrn: lrn, 
-                    name: name, 
-                    subject: subject, 
+                var record = {
+                    lrn: lrn,
+                    name: name,
+                    subject: subject,
                     grade: grade
-                 };
+                };
 
-                grades.push(record);
+                if (selectedIndex === -1) {
+                    grades.push(record);
+                    message.textContent = "Saved.";
+                } else {
+                    grades[selectedIndex] = record;
+                    message.textContent = "Updated.";
+                    selectedIndex = -1;
+                    btnSave.value = "Save";
+                }
+
                 localStorage.setItem("grades", JSON.stringify(grades));
-
-                message.textContent = "Saved.";
 
                 txtLrn.value = "";
                 txtName.value = "";
                 txtSubject.value = "";
                 txtGrade.value = "";
+                showGrades();
             }
 
             showGrades();
