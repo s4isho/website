@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Ito ang nag-didikta ng background color para sa navigation bar */
 .navbar {
     background-image: linear-gradient(#fe00fe, #810077);
