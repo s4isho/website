@@ -4,6 +4,8 @@
     /* Primary Navy */
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
 }
 
 /* Ito ang nagdidikta ng alignment at spacing ng navigation bar */
