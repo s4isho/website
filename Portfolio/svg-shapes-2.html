@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+
+    <style>
+        #myDrawing {
+            border: solid 1px rgb(128, 0, 111);
+        }
+
+        /* #xmas {
+            display: flex;
+            justify-content: center;
+        } */
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            /* Centers on both X and Y axes */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas height="500" width="1000" id="myDrawing">
+
+    </canvas>
+
+    <script>
+        const canvas = document.getElementById("myDrawing");
+        const ctx = canvas.getContext("2d");
+
+        // leaves
+        ctx.beginPath();
+        ctx.moveTo(500, 50); // Move the pen to (30, 50)
+
+        ctx.lineTo(460, 100);
+        ctx.lineTo(470, 100);
+
+        ctx.lineTo(435, 150);
+        ctx.lineTo(445, 150);
+
+        ctx.lineTo(410, 200);
+        ctx.lineTo(420, 200);
+
+        ctx.lineTo(390, 250);
+        ctx.lineTo(400, 250);
+
+        ctx.lineTo(615, 250);
+
+        ctx.lineTo(585, 200);
+        ctx.lineTo(595, 200);
+
+        ctx.lineTo(560, 150);
+        ctx.lineTo(570, 150);
+
+        ctx.lineTo(535, 100);
+        ctx.lineTo(545, 100);
+
+        ctx.fillStyle = 'green'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'green'; // Sets line color to Red
+        ctx.lineWidth = 3;
+
+        ctx.stroke();
+
+        // stem
+        ctx.beginPath();
+        ctx.moveTo(500, 250); // Move the pen to (30, 50)
+        ctx.lineTo(500, 280);
+
+        ctx.fillStyle = 'brown'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'brown'; // Sets line color to Red
+        ctx.lineWidth = 20;
+
+        ctx.stroke();
+
+        // lights
+        ctx.beginPath();
+        ctx.arc(480, 97, 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'orange'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'orange'; // Sets line color to Red
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(530, 110, 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'yellow'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'yellow'; // Sets line color to Red
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(466, 143, 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'blue'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'blue'; // Sets line color to Red
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(550, 160, 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'red'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'red'; // Sets line color to Red
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(430, 208, 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'purple'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'purple'; // Sets line color to Red
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(575, 199, 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'cyan'; 
+        ctx.fill(); 
+        ctx.strokeStyle = 'cyan'; // Sets line color to Red
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        function draw20BlueCircles() {
+            for (let i = 0; i < 20; i++) {
+                // 1. Random X and Y position on the canvas
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                // 2. Random size (radius from 5px to 30px)
+                const radius = Math.random() * 5 + 1;
+                // 3. Random shade of blue
+                const hue = Math.floor(Math.random() * 40) + 195;
+                const lightness = Math.floor(Math.random() * 50) + 35;
+                ctx.fillStyle = "hsl(" + hue + ", 85%, " + lightness + "%)";
+                // 4. Draw the circle
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI * 2);
+                ctx.fill();
+            }//end of for loop
+        }//end fo function
+        draw20BlueCircles();
+
+         // 2. Style the text (size, font family, and color)
+        ctx.font = "40px Arial";
+        ctx.fillStyle = "red";
+
+        // 3. Draw the text at coordinates (x = 50, y = 85)
+        ctx.fillText("Merry Christmas!", 350, 350);
+    </script>
+    
+</body>
+
+</html>
