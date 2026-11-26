@@ -8,6 +8,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("images/lain.jpeg");
+    background-size: cover;       /* Scales the image to fill the screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Stops the image from tiling */
+    background-attachment: fixed; /* Keeps the image still when scrolling */
 }
 
 /* Ito ang nag-didikta ng background color para sa navigation bar */
